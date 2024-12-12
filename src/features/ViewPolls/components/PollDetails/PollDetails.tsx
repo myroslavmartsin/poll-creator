@@ -12,7 +12,11 @@ const PollList: React.FC = () => {
 
   const navigate = useNavigate();
 
-  const { data: poll, isLoading, error } = useGetPollQuery(id!);
+  const {
+    data: poll,
+    isLoading,
+    error
+  } = useGetPollQuery(id!, { refetchOnMountOrArgChange: true });
 
   const [deletePoll, { isLoading: isDeleting }] = useDeletePollMutation();
 
