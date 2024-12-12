@@ -1,0 +1,28 @@
+.poll-details {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f2eeee;
+  box-sizing: border-box;
+  border-radius: 9px;
+  padding: 26px;
+}
+
+.poll-details-question {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 26px;
+  margin-top: 18px;
+}
+
+li {
+  margin-bottom: 8px;
+  line-height: 20px;
+}
+
+li:last-of-type {
+  margin-bottom: 0;
+}

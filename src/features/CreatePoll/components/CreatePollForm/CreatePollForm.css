@@ -1,0 +1,43 @@
+input {
+  width: 100%;
+  display: block;
+  padding: 8px 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  border-bottom: 1px solid #f2eeee;
+  outline: none;
+}
+
+.form-field-error {
+  height: 24px;
+  font-weight: 400;
+}
+
+.add-option-field {
+  width: 100%;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+}
+
+input::placeholder {
+  color: #cccccc;
+}
+
+.option-list {
+  margin-bottom: 30px;
+}
+
+.option-list-item {
+  height: 47px;
+  border: 1px solid #f2eeee;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
+.option-list-item:not(:first-of-type) {
+  border-top: none;
+}

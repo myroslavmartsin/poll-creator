@@ -1,0 +1,5 @@
+.polls-container {
+  align-items: flex-start;
+  grid-template-columns: 400px 450px;
+  gap: 25px;
+}
