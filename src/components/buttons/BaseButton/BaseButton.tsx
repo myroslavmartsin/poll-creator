@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 interface BaseButtonProps {
-  size: 'lg' | 'sm';
+  size?: 'lg' | 'sm';
 }
 
 export const BaseButton = styled.button<BaseButtonProps>`
