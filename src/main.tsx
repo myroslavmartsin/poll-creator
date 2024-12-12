@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, redirect, RouterProvider } from 'react-router-dom';
 import PollDetails from './features/ViewPolls/components/PollDetails/PollDetails.tsx';
 import CreatePoll from './features/CreatePoll/CreatePoll.tsx';
 import ViewPolls from './features/ViewPolls/ViewPolls.tsx';
@@ -20,7 +20,8 @@ const router = createBrowserRouter([
         path: 'view-polls',
         element: <ViewPolls />,
         children: [{ path: '/view-polls/:id', element: <PollDetails /> }]
-      }
+      },
+      { path: '', loader: () => redirect('/create-poll') }
     ]
   }
 ]);
